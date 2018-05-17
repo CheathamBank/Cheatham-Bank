@@ -66,14 +66,45 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CheathamCustomerDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="customers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="customers.Designer.cs">
+      <DependentUpon>customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersFormDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>customersFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="transactionFormDataSet.cs">
+      <DependentUpon>transactionFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="transactionFormDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>transactionFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions.Designer.cs">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="customers.resx">
+      <DependentUpon>customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Transactions.resx">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="CheathamCustomerDataSet.xsc">
       <DependentUpon>CheathamCustomerDataSet.xsd</DependentUpon>
     </None>
@@ -94,6 +128,17 @@
     <None Include="CheathamCustomerDataSet.xss">
       <DependentUpon>CheathamCustomerDataSet.xsd</DependentUpon>
     </None>
+    <None Include="customersFormDataSet.xsc">
+      <DependentUpon>customersFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="customersFormDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>customersFormDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="customersFormDataSet.xss">
+      <DependentUpon>customersFormDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +148,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="transactionFormDataSet.xsc">
+      <DependentUpon>transactionFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="transactionFormDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>transactionFormDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="transactionFormDataSet.xss">
+      <DependentUpon>transactionFormDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
